@@ -15,16 +15,33 @@ body {
 .green-shadow {
   position: relative;
   top: 0;
-  box-shadow: 0 3px 0 rgb(21 128 61 / var(--tw-bg-opacity));
+  box-shadow: 0 3px 0 rgb(21 128 61);
 }
 
-.green-shadow:hover {
-  box-shadow: 0 3px 0 rgb(22 163 74 / var(--tw-bg-opacity));
+.slate-shadow {
+  position: relative; 
+  top: 0;
+  box-shadow: 0 3px rgb(51 65 85);
 }
 
-.green-shadow:active {
-  top: 3px;
-  box-shadow: 0 0px 0 rgb(22 163 74 / var(--tw-bg-opacity));
+.green-shadow:active, .slate-shadow:active {
+  top: 2px;
+  box-shadow: 0 0 0;
+}
+
+.spinner {
+  box-shadow: inset -90px 0px 70px -30px rgb(30 41 59), inset 90px 0px 70px -30px rgb(30 41 59);
+  background-image: url(assets/rl_spinner_sm.png);
+  background-repeat: repeat;
+  height: 100px;
+  background-position-x: 100px;
+  transition: cubic-bezier(0,0,0,1) 5s;
+}
+
+.auto-width {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 code {
